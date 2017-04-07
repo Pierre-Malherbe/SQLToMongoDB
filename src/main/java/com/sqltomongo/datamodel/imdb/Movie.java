@@ -4,12 +4,23 @@ import java.util.List;
 
 public class Movie {
 
+    private Integer id;
     private String title;
     private List<String> keywords;
     private List<Actor> actors;
     private List<String> types;
     private String director;
     private int year;
+    private String info;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Movie setId(Integer id) {
+        this.id = id;
+        return this;
+    }
 
     public String getTitle() {
         return title;
@@ -62,6 +73,15 @@ public class Movie {
 
     public Movie setYear(int year) {
         this.year = year;
+        return this;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public Movie setInfo(String info) {
+        this.info = info;
         return this;
     }
 }
