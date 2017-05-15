@@ -4,20 +4,19 @@ import java.util.List;
 
 public class Movie {
 
-    private Integer id;
+    private String id;
     private String title;
-    private List<String> keywords;
+    private String keywords;
     private List<Actor> actors;
-    private List<String> types;
     private String director;
-    private int year;
+    private String year;
     private String info;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public Movie setId(Integer id) {
+    public Movie setId(String id) {
         this.id = id;
         return this;
     }
@@ -31,11 +30,11 @@ public class Movie {
         return this;
     }
 
-    public List<String> getKeywords() {
+    public String getKeywords() {
         return keywords;
     }
 
-    public Movie setKeywords(List<String> keywords) {
+    public Movie setKeywords(String keywords) {
         this.keywords = keywords;
         return this;
     }
@@ -49,15 +48,6 @@ public class Movie {
         return this;
     }
 
-    public List<String> getTypes() {
-        return types;
-    }
-
-    public Movie setTypes(List<String> types) {
-        this.types = types;
-        return this;
-    }
-
     public String getDirector() {
         return director;
     }
@@ -67,11 +57,11 @@ public class Movie {
         return this;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public Movie setYear(int year) {
+    public Movie setYear(String year) {
         this.year = year;
         return this;
     }

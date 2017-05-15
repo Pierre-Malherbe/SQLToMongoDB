@@ -1,15 +1,14 @@
 package com.sqltomongo.datamodel.imdb;
 
-import java.util.Date;
 import java.util.List;
 
 public class Actor {
 
     private String nom;
     private String prenom;
-    private Date date_born;
-    private Date date_death;
-    private List<Movie> movies;
+    private String genre;
+    private String date_born;
+    List<String> movies;
 
     public String getNom() {
         return nom;
@@ -29,29 +28,29 @@ public class Actor {
         return this;
     }
 
-    public Date getDate_born() {
+    public String getGenre() {
+        return genre;
+    }
+
+    public Actor setGenre(String genre) {
+        this.genre = genre;
+        return this;
+    }
+
+    public String getDate_born() {
         return date_born;
     }
 
-    public Actor setDate_born(Date date_born) {
+    public Actor setDate_born(String date_born) {
         this.date_born = date_born;
         return this;
     }
 
-    public Date getDate_death() {
-        return date_death;
-    }
-
-    public Actor setDate_death(Date date_death) {
-        this.date_death = date_death;
-        return this;
-    }
-
-    public List<Movie> getMovies() {
+    public List<String> getMovies() {
         return movies;
     }
 
-    public Actor setMovies(List<Movie> movies) {
+    public Actor setMovies(List<String> movies) {
         this.movies = movies;
         return this;
     }
